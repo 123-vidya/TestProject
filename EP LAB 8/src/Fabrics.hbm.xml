@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	   	<class name="Fabrics" table="fr">
+	   			<id name="id" column="fr_id">
+	   			<generator class="increment"></generator>
+	   			</id>
+	   			<property name="type" column="fr_type"></property>
+	   		    <property name="length" column="fr_length"></property>
+	   			<property name="colour" column="fr_colour"></property>
+	   			<property name="cost" column="fr_cost"></property>
+	   	</class>
+</hibernate-mapping>
